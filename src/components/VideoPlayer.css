@@ -1,0 +1,64 @@
+/*/* videoPlayer.css */
+
+/* Container */
+.vjs-container {
+  position: relative;
+  width: 100%;
+}
+
+/* Hide the Video.js player until it's ready */
+.hidden {
+  display: none;
+}
+
+/* Loading skeleton */
+.skeleton-wrapper {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  background: #ffe6ef;
+  border-radius: 12px;
+  padding: 20px;
+}
+.skeleton-banner {
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(90deg, #ffe6ef 25%, #ffd4e6 37%, #ffe6ef 63%);
+  background-size: 400% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: 8px;
+}
+.skeleton-bar {
+  height: 16px;
+  margin: 12px 0;
+  background: linear-gradient(90deg, #ffe6ef 25%, #ffd4e6 37%, #ffe6ef 63%);
+  background-size: 400% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: 4px;
+}
+.skeleton-bar.short {
+  width: 60%;
+}
+@keyframes shimmer {
+  0% { background-position: -400px 0; }
+  100% { background-position: 400px 0; }
+}
+
+/* Skip Intro button */
+.skip-intro-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: rgba(255, 182, 193, 0.9);
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+.skip-intro-btn:hover {
+  background: rgba(255, 105, 180, 0.9);
+  transform: scale(1.05);
+}

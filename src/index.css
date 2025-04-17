@@ -1,0 +1,101 @@
+﻿/* index.css */
+/*<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap" rel="stylesheet">
+
+:root {
+  --bg: #fff;
+  --text: #333;
+  --accent: #ff69b4;
+  --nav-bg: #ffe6ef;
+}
+.dark {
+  --bg: #1a1a1a;
+  --text: #ddd;
+  --accent: #ffb6c1;
+  --nav-bg: #333;
+}
+body, .light, .dark {
+  background-color: var(--bg);
+  color: var(--text);
+  margin: 0;
+  font-family: sans-serif;
+}
+
+a {
+  color: var(--text);
+}
+*/
+/* index.css */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap');
+
+:root {
+  --bg: #fff;
+  --text: #333;
+  --accent: #ff69b4;
+  --nav-bg: #ffe6ef;
+}
+.dark {
+  --bg: #1a1a1a;
+  --text: #ddd;
+  --accent: #ffb6c1;
+  --nav-bg: #333;
+}
+/* 💕 Love Theme */
+.love {
+  --bg: #fff0f5;
+  --text: #3c2c3e;
+  --accent: #ff69b4;
+  --nav-bg: #ffe0eb;
+}
+/* 🌊 Chill Theme */
+.chill {
+  --bg: #e0f7fa;
+  --text: #004d4d;
+  --accent: #26c6da;
+  --nav-bg: #b2ebf2;
+}
+
+body, .light, .dark, .love, .chill {
+  background-color: var(--bg);
+  color: var(--text);
+  margin: 0;
+  font-family: 'Fredoka', sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Links follow theme */
+a {
+  color: var(--text);
+  transition: color 0.2s ease;
+}
+
+/* Buttons and clickable items */
+button, a {
+  transition: all 0.2s ease;
+}
+button:hover, a:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(255,182,193,0.4);
+}
+
+/* Tooltip animations */
+.tooltip {
+  transition: opacity 0.2s ease, visibility 0.2s ease;
+}
+
+/* Card hover smooth scaling */
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card-hover:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 20px rgba(255, 182, 193, 0.3);
+}
+
+/* Fade-in effect for sections */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.fade-up {
+  animation: fadeInUp 0.6s ease forwards;
+}
